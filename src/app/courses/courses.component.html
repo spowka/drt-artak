@@ -1,0 +1,16 @@
+<div class="container">
+  <button mat-raised-button (click)="openDialog()">Add New Course</button>
+  <table class="table table-dark">
+    <tr>
+      <th>Title</th>
+      <th>Duration</th>
+      <th>Duration-unit</th>
+      <th>Description</th>
+    </tr>
+    <tr app-courses-item (update)="openDialog($event)" (delete)="onDelete($event)" [course]="course"
+      *ngFor="let course of courses"></tr>
+  </table>  
+</div>
+
+
+

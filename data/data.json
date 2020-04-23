@@ -1,0 +1,33 @@
+{
+  "links": [],
+  "courses": [
+    {
+      "title": "Modern Web Development",
+      "duration": 3,
+      "duration-unit": "day",
+      "description": "HTML5, CSS3, ES6/JS and more",
+      "id": 1
+    },
+    {
+      "title": "Git",
+      "duration": 3,
+      "duration-unit": "day",
+      "description": "Git and GitHub",
+      "id": 2
+    },
+    {
+      "title": "python",
+      "duration": 5,
+      "duration-unit": "day",
+      "description": "Intro to Python",
+      "id": 3
+    },
+    {
+      "title": "dawda",
+      "duration": 2,
+      "duration-unit": "dawda",
+      "description": "dawdawd",
+      "id": 4
+    }
+  ]
+}

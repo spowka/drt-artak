@@ -1,0 +1,24 @@
+<form [formGroup]="coursesForm">
+  <h1 mat-dialog-title>
+    <ng-container *ngIf="isNew; else updateTitle">Add New Course</ng-container>
+    <ng-template #updateTitle>Update Course</ng-template>
+  </h1>
+  <div mat-dialog-content>
+    <mat-form-field>
+      <input matInput type="text" formControlName="title" placeholder="Title" />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="number" formControlName="duration" placeholder="Duration" />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="text" formControlName="duration-unit" placeholder="Duration-unit" />
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="text" formControlName="description" placeholder="Description" />
+    </mat-form-field>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Close</button>
+    <button mat-button [mat-dialog-close]="data" (click)="onSave()">Save</button>
+  </div>
+</form>

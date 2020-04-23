@@ -1,0 +1,8 @@
+<td>{{ course.title }}</td>
+<td>{{ course.duration }}</td>
+<td>{{ course['duration-unit'] }}</td>
+<td>{{ course.description }}</td>
+<td>
+    <button class="btn btn-danger" (click)="onDelete(course)">Detele</button>
+    <button class="btn btn-warning" (click)="onUpdate(course)">Edit</button>
+</td>
